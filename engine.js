@@ -100,7 +100,7 @@ module.exports = function(options) {
                 };
 
                 // parentheses are only needed when a scope is present
-                const scope = answers.scope.trim();
+                let scope = answers.scope.trim();
                 scope = scope ? '(' + answers.scope.trim() + ')' : '';
 
                 // Use branch name (should be JIRA ticket)

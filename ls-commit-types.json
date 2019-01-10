@@ -8,9 +8,9 @@
             "description": "A bug fix",
             "title": "Bug Fixes"
         },
-        "style": {
-            "description": "Minor display updates (padding adjustments, color tweaks)",
-            "title": "Style Updates"
+        "partial": {
+            "description": "Commit of partial work, working toward or under a larger fix/feature",
+            "title": "Partial Work"
         },
         "pr-feedback": {
             "description": "Updates done due to PR feedback",

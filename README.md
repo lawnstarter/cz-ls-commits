@@ -1,2 +1,2 @@
 # cz-ls-commits
-Commitizen LawnStarter Config
+[Commitizen](https://github.com/commitizen/cz-cli) LawnStarter Config

@@ -1,0 +1,31 @@
+{
+    "name": "cz-ls-commits",
+    "version": "0.1.0",
+    "author": "LawnStarter, Inc.",
+    "description": "Commitizen adapter following the LawnStarter format.",
+    "main": "index.js",
+    "scripts": {
+        "commit": "git-cz",
+        "test": "echo 'Tests need to be setup!'"
+    },
+    "homepage": "https://github.com/lawnstarter/cz-ls-commits",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/commitizen/cz-ls-commits.git"
+    },
+    "dependencies": {
+        "git-branch": "^2.0.1",
+        "lodash.map": "^4.6.0",
+        "longest": "^2.0.1",
+        "right-pad": "^1.0.1",
+        "word-wrap": "^1.2.3"
+    },
+    "devDependencies": {
+        "commitizen": "3.0.5"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./index.js"
+        }
+    }
+}

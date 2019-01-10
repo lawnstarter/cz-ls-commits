@@ -1,0 +1,40 @@
+{
+    "types": {
+        "feat": {
+            "description": "A new feature",
+            "title": "Features"
+        },
+        "fix": {
+            "description": "A bug fix",
+            "title": "Bug Fixes"
+        },
+        "ui-tweak": {
+            "description": "Minor updates to display (padding adjustments, color tweaks)",
+            "title": "UI Tweak"
+        },
+        "pr-feedback": {
+            "description": "Updates done due to PR feedback",
+            "title": "PR Feedback"
+        },
+        "refactor": {
+            "description": "A code change that neither fixes a bug nor adds a feature",
+            "title": "Code Refactoring"
+        },
+        "test": {
+            "description": "Adding missing tests or correcting existing tests",
+            "title": "Tests"
+        },
+        "docs": {
+            "description": "Documentation only changes",
+            "title": "Documentation"
+        },
+        "build": {
+            "description": "Changes that affect the build system, CI, or non src/test files",
+            "title": "Builds"
+        },
+        "revert": {
+            "description": "Reverts a previous commit",
+            "title": "Reverts"
+        }
+    }
+}

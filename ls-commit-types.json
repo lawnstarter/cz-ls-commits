@@ -8,16 +8,16 @@
             "description": "A bug fix",
             "title": "Bug Fixes"
         },
-        "ui-tweak": {
-            "description": "Minor updates to display (padding adjustments, color tweaks)",
-            "title": "UI Tweak"
+        "style": {
+            "description": "Minor display updates (padding adjustments, color tweaks)",
+            "title": "Style Updates"
         },
         "pr-feedback": {
             "description": "Updates done due to PR feedback",
             "title": "PR Feedback"
         },
         "refactor": {
-            "description": "A code change that neither fixes a bug nor adds a feature",
+            "description": "A code change that neither fixes a bug nor adds a feature (code formatting as well)",
             "title": "Code Refactoring"
         },
         "test": {
@@ -28,9 +28,9 @@
             "description": "Documentation only changes",
             "title": "Documentation"
         },
-        "build": {
-            "description": "Changes that affect the build system, CI, or non src/test files",
-            "title": "Builds"
+        "chore": {
+            "description": "Build system, non src code changes",
+            "title": "Chore"
         },
         "revert": {
             "description": "Reverts a previous commit",

@@ -9,7 +9,7 @@
             "title": "Bug Fixes"
         },
         "partial": {
-            "description": "Commit of partial work, working toward or under a larger fix/feature",
+            "description": "Partial work working toward or under a larger fix/feature (will not trigger a release)",
             "title": "Partial Work"
         },
         "pr-feedback": {

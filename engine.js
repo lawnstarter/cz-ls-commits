@@ -119,7 +119,7 @@ module.exports = function(options) {
                 const body = wrap(answers.body, wrapOptions);
 
                 // Apply breaking change prefix, removing it if already present
-                const breaking = answers.breaking ? answers.breaking.trim() : '';
+                let breaking = answers.breaking ? answers.breaking.trim() : '';
                 breaking = breaking
                     ? 'BREAKING CHANGE: ' + breaking.replace(/^BREAKING CHANGE: /, '')
                     : '';

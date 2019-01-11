@@ -58,13 +58,6 @@ module.exports = function(options) {
                 },
                 {
                     type: 'input',
-                    name: 'scope',
-                    message:
-                        'What is the scope of this change (e.g. component, file name, flow)? (press enter to skip)\n',
-                    default: options.defaultScope,
-                },
-                {
-                    type: 'input',
                     name: 'subject',
                     message: 'Write a short, imperative tense description of the change:\n',
                     default: options.defaultSubject,
@@ -99,21 +92,14 @@ module.exports = function(options) {
                     width: maxLineWidth,
                 };
 
-                // parentheses are only needed when a scope is present
-                let scope = answers.scope.trim();
-                scope = scope ? '(' + answers.scope.trim() + ')' : '';
-
                 // Use branch name (should be JIRA ticket)
-                const branchName = branch.sync() ? branch.sync() + ': ' : '';
+                const branchName = branch.sync() ? ' ' + branch.sync() + ': ' : '';
 
                 // Hard limit this line
-                const head = (
-                    answers.type +
-                    scope +
-                    ': ' +
-                    branchName +
-                    answers.subject.trim()
-                ).slice(0, maxLineWidth);
+                const head = (answers.type + branchName + answers.subject.trim()).slice(
+                    0,
+                    maxLineWidth
+                );
 
                 // Wrap these lines at 100 characters
                 const body = wrap(answers.body, wrapOptions);

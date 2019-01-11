@@ -93,10 +93,10 @@ module.exports = function(options) {
                 };
 
                 // Use branch name (should be JIRA ticket)
-                const branchName = branch.sync() ? ' ' + branch.sync() + ': ' : '';
+                const branchName = branch.sync() ? '(' + branch.sync() + ')' : '';
 
                 // Hard limit this line
-                const head = (answers.type + branchName + answers.subject.trim()).slice(
+                const head = (answers.type + branchName + ': ' + answers.subject.trim()).slice(
                     0,
                     maxLineWidth
                 );

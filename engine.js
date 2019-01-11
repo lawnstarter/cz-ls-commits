@@ -108,10 +108,10 @@ module.exports = function(options) {
 
                 // Hard limit this line
                 const head = (
-                    branchName +
                     answers.type +
                     scope +
                     ': ' +
+                    branchName +
                     answers.subject.trim()
                 ).slice(0, maxLineWidth);
 

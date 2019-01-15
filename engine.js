@@ -83,7 +83,7 @@ module.exports = function(options) {
                     },
                 },
             ]).then(function(answers) {
-                const maxLineWidth = 100;
+                const maxLineWidth = 72;
 
                 const wrapOptions = {
                     trim: true,
@@ -101,7 +101,7 @@ module.exports = function(options) {
                     maxLineWidth
                 );
 
-                // Wrap these lines at 100 characters
+                // Wrap these lines at 72 characters
                 const body = wrap(answers.body, wrapOptions);
 
                 // Apply breaking change prefix, removing it if already present

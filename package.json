@@ -1,6 +1,6 @@
 {
     "name": "cz-ls-commits",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "author": "LawnStarter, Inc.",
     "description": "Commitizen adapter following the LawnStarter format.",
     "main": "index.js",

@@ -12,9 +12,9 @@
             "description": "Partial work working toward or under a larger fix/feature (will not trigger a release)",
             "title": "Partial Work"
         },
-        "pr-feedback": {
+        "feedback": {
             "description": "Updates done due to PR feedback",
-            "title": "PR Feedback"
+            "title": "Feedback"
         },
         "refactor": {
             "description": "A code change that neither fixes a bug nor adds a feature (code formatting as well)",

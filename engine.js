@@ -35,13 +35,8 @@ module.exports = function (options) {
                 '\nLine 1 will be cropped at 100 characters with the current branch name prepended. All other lines will be wrapped after 100 characters.\n'
             );
 
-            // Let's ask some questions of the user
-            // so that we can populate our commit
-            // template.
-            //
-            // See inquirer.js docs for specifics.
-            // You can also opt to use another input
-            // collection library if you prefer.
+            const branchName = branch.sync();
+
             cz.prompt([
                 {
                     type: 'list',
@@ -49,6 +44,12 @@ module.exports = function (options) {
                     message: "Select the type of change that you're committing:",
                     choices: choices,
                     default: options.defaultType,
+                },
+                {
+                    type: 'input',
+                    name: 'ticket',
+                    message: 'Enter the name of the JIRA ticket (ex PE-123):\n',
+                    default: branchName,
                 },
                 {
                     type: 'input',
@@ -87,7 +88,7 @@ module.exports = function (options) {
                 };
 
                 // Use branch name (should be JIRA ticket)
-                const branchName = branch.sync() ? '(' + branch.sync() + ')' : '';
+                const branchName = answers.branchName ? '(' + answers.branchName + ')' : '';
 
                 // Hard limit this line
                 const head = (answers.type + branchName + ': ' + answers.subject.trim()).slice(

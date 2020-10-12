@@ -1,3 +1,10 @@
+## [0.3.3](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.2...0.3.3) (2020-10-12)
+
+
+### Bug Fixes
+
+* **jira:** show jira ticket ([72b29ac](https://github.com/lawnstarter/cz-ls-commits/commit/72b29ac5f30305f64b29e52ec158b12b43be623d))
+
 ## [0.3.2](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.1...0.3.2) (2020-10-12)
 
 

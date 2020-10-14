@@ -47,12 +47,6 @@ module.exports = function (options) {
                 },
                 {
                     type: 'input',
-                    name: 'ticket',
-                    message: 'Enter the name of the JIRA ticket (ex PE-123):\n',
-                    default: branchName,
-                },
-                {
-                    type: 'input',
                     name: 'subject',
                     message: 'Write a short, imperative tense description of the change:\n',
                     default: options.defaultSubject,
@@ -62,6 +56,12 @@ module.exports = function (options) {
                     name: 'body',
                     message: 'Provide a longer description of the change: (press enter to skip)\n',
                     default: options.defaultBody,
+                },
+                {
+                    type: 'input',
+                    name: 'ticket',
+                    message: `Enter the name of the JIRA ticket (press enter to use ${branchName}):\n`,
+                    default: branchName,
                 },
                 {
                     type: 'confirm',

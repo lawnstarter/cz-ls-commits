@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.3...0.3.4) (2020-10-14)
+
+
+### Bug Fixes
+
+* move jira prompt back ([c78bb53](https://github.com/lawnstarter/cz-ls-commits/commit/c78bb533432dbda635b4b92e1d6a8aae00a5f20a))
+
 ## [0.3.3](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.2...0.3.3) (2020-10-12)
 
 

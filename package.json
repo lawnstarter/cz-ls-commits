@@ -5,7 +5,7 @@
     "description": "Commitizen adapter following the LawnStarter format.",
     "main": "index.js",
     "scripts": {
-        "cm": "git-cz"
+        "cm": "git cz"
     },
     "homepage": "https://github.com/lawnstarter/cz-ls-commits",
     "repository": {

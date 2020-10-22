@@ -53,9 +53,9 @@ module.exports = function (options) {
                 },
                 {
                     type: 'input',
-                    name: 'description',
+                    name: 'subject',
                     message: 'DESCRIPTION - write a short description of the change:\n',
-                    default: options.defaultDescription,
+                    default: options.defaultSubject,
                 },
                 {
                     type: 'input',
@@ -78,21 +78,21 @@ module.exports = function (options) {
             ]).then(function (answers) {
                 const maxLineWidth = 72;
 
-                function getHead(description) {
+                function getHead(subject) {
                     return `${
                         answers.type
-                    }${answers.scope ? '(' + answers.scope + ')' : ''}: ${description} ${answers.ticket}`;
+                    }${answers.scope ? '(' + answers.scope + ')' : ''}: ${subject} ${answers.ticket}`;
                 }
 
-                let description = answers.description.trim();
+                let subject = answers.subject.trim();
 
                 // Enforce 72 characters max - trim description otherwise
-                const headLength = getHead(description).length;
+                const headLength = getHead(subject).length;
                 if (headLength > maxLineWidth) {
-                    description = description.slice(0, -(headLength - maxLineWidth));
+                    subject = subject.slice(0, -(headLength - maxLineWidth));
                 }
 
-                const head = getHead(description);
+                const head = getHead(subject);
 
                 const wrapOptions = {
                     trim: true,

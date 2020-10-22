@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.0...1.0.1) (2020-10-22)
+
+
+### Bug Fixes
+
+* fix for newline ([e607022](https://github.com/lawnstarter/cz-ls-commits/commit/e607022bce1b467c2b46f9aec8bb68c2592c7537))
+
 # [1.0.0](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.4...1.0.0) (2020-10-22)
 
 

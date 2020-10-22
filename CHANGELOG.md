@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.2...1.0.3) (2020-10-22)
+
+
+### Bug Fixes
+
+* **remove partial:** remove partial ([a0020be](https://github.com/lawnstarter/cz-ls-commits/commit/a0020beb9ee86dcef9db8ce573b001c6dff39051))
+
 ## [1.0.2](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.1...1.0.2) (2020-10-22)
 
 

@@ -32,11 +32,6 @@
         "husky": "^3.1.0",
         "semantic-release": "^17.1.2"
     },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
     "release": {
         "tagFormat": "${version}",
         "plugins": [
@@ -61,5 +56,15 @@
         "commitizen": {
             "path": "./index.js"
         }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "./commitlint"
+        ]
     }
 }

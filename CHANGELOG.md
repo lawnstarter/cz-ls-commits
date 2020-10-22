@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.1...1.0.2) (2020-10-22)
+
+
+### Bug Fixes
+
+* **commitizen:** simplify lint rules ([2e8cffe](https://github.com/lawnstarter/cz-ls-commits/commit/2e8cffecbd90e4d3caac810133dcf54291fe9030))
+
 ## [1.0.1](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.0...1.0.1) (2020-10-22)
 
 

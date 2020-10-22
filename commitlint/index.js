@@ -18,7 +18,6 @@ module.exports = {
                 'build',
                 'conf',
                 'chore',
-                'partial',
                 'revert',
             ],
         ],

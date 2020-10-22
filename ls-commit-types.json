@@ -40,10 +40,6 @@
             "description": "Build system, non src code changes",
             "title": "Chore"
         },
-        "partial": {
-            "description": "Partial work working toward or under a larger fix/feature (will not trigger a release)",
-            "title": "Partial Work"
-        },
         "revert": {
             "description": "Reverts a previous commit",
             "title": "Reverts"

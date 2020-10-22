@@ -1,3 +1,16 @@
+# [1.0.0](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.4...1.0.0) (2020-10-22)
+
+
+### Features
+
+* updated lint rules n/a ([1d7fc02](https://github.com/lawnstarter/cz-ls-commits/commit/1d7fc02abe9b4efdf67e0d628f3404dd1f36d5aa))
+* **overhaul:** change to new standards n/a ([dff14dc](https://github.com/lawnstarter/cz-ls-commits/commit/dff14dc57887c1c8e01e23bb226dc3398a6ba20b))
+
+
+### BREAKING CHANGES
+
+* using entirely new set of rules
+
 ## [0.3.4](https://github.com/lawnstarter/cz-ls-commits/compare/0.3.3...0.3.4) (2020-10-14)
 
 

@@ -63,7 +63,7 @@
     },
     "commitlint": {
         "extends": [
-            "./commitlint"
+            "./commitlint/index.js"
         ]
     }
 }

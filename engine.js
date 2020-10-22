@@ -48,7 +48,7 @@ module.exports = function (options) {
                 {
                     type: 'input',
                     name: 'scope',
-                    message: 'SCOPE - enter one word that defines the work (enter to skip):\n',
+                    message: 'SCOPE - enter one word that defines the work (enter to skip):',
                     default: options.defaultScope,
                 },
                 {
@@ -60,7 +60,7 @@ module.exports = function (options) {
                 {
                     type: 'input',
                     name: 'ticket',
-                    message: `JIRA ID - enter the JIRA ticket ID (enter to use ${branchName}):\n`,
+                    message: `JIRA ID - enter the JIRA ticket ID (enter to use ${branchName}):`,
                     default: branchName,
                 },
                 {

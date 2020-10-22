@@ -41,26 +41,26 @@ module.exports = function (options) {
                 {
                     type: 'list',
                     name: 'type',
-                    message: "Select the type of change that you're committing:",
+                    message: "TYPE - select the type of change that you're committing:",
                     choices: choices,
                     default: options.defaultType,
                 },
                 {
                     type: 'input',
+                    name: 'scope',
+                    message: 'SCOPE - enter one word that defines the work (enter to skip):\n',
+                    default: options.defaultScope,
+                },
+                {
+                    type: 'input',
                     name: 'subject',
-                    message: 'Write a short, imperative tense description of the change:\n',
+                    message: 'DESCRIPTION - write a short description of the change:\n',
                     default: options.defaultSubject,
                 },
                 {
                     type: 'input',
-                    name: 'body',
-                    message: 'Provide a longer description of the change: (press enter to skip)\n',
-                    default: options.defaultBody,
-                },
-                {
-                    type: 'input',
                     name: 'ticket',
-                    message: `Enter the name of the JIRA ticket (press enter to use ${branchName}):\n`,
+                    message: `JIRA ID - enter the JIRA ticket ID (enter to use ${branchName}):\n`,
                     default: branchName,
                 },
                 {
@@ -71,14 +71,28 @@ module.exports = function (options) {
                 },
                 {
                     type: 'input',
-                    name: 'breaking',
-                    message: 'Describe the breaking changes:\n',
-                    when: function (answers) {
-                        return answers.isBreaking;
-                    },
+                    name: 'body',
+                    message: 'BODY - write a longer description of the change (enter to skip)\n',
+                    default: options.defaultBody,
                 },
             ]).then(function (answers) {
                 const maxLineWidth = 72;
+
+                function getHead(subject) {
+                    return `${
+                        answers.type
+                    }${answers.scope ? '(' + answers.scope + ')' : ''}: ${subject} ${answers.ticket}`;
+                }
+
+                let subject = answers.subject.trim();
+
+                // Enforce 72 characters max - trim description otherwise
+                const headLength = getHead(subject).length;
+                if (headLength > maxLineWidth) {
+                    subject = subject.slice(0, -(headLength - maxLineWidth));
+                }
+
+                const head = getHead(subject);
 
                 const wrapOptions = {
                     trim: true,
@@ -87,26 +101,13 @@ module.exports = function (options) {
                     width: maxLineWidth,
                 };
 
-                // Use branch name (should be JIRA ticket)
-                const branchName = answers.branchName ? '(' + answers.branchName + ')' : '';
-
-                // Hard limit this line
-                const head = (answers.type + branchName + ': ' + answers.subject.trim()).slice(
-                    0,
-                    maxLineWidth
+                // Wrap these lines at 72 characters
+                const body = wrap(
+                    answers.isBreaking ? `BREAKING CHANGE: ${answers.body}` : answers.body,
+                    wrapOptions
                 );
 
-                // Wrap these lines at 72 characters
-                const body = wrap(answers.body, wrapOptions);
-
-                // Apply breaking change prefix, removing it if already present
-                let breaking = answers.breaking ? answers.breaking.trim() : '';
-                breaking = breaking
-                    ? 'BREAKING CHANGE: ' + breaking.replace(/^BREAKING CHANGE: /, '')
-                    : '';
-                breaking = wrap(breaking, wrapOptions);
-
-                commit(head + '\n\n' + body + '\n\n' + breaking);
+                commit(head + '\n' + body);
             });
         },
     };

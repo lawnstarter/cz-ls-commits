@@ -2,35 +2,47 @@
     "types": {
         "feat": {
             "description": "A new feature",
-            "title": "Features"
+            "title": "Feature"
         },
         "fix": {
-            "description": "A bug fix",
-            "title": "Bug Fixes"
-        },
-        "partial": {
-            "description": "Partial work working toward or under a larger fix/feature (will not trigger a release)",
-            "title": "Partial Work"
-        },
-        "feedback": {
-            "description": "Updates done due to PR feedback",
-            "title": "Feedback"
-        },
-        "refactor": {
-            "description": "A code change that neither fixes a bug nor adds a feature (code formatting as well)",
-            "title": "Code Refactoring"
-        },
-        "test": {
-            "description": "Adding missing tests or correcting existing tests",
-            "title": "Tests"
+            "description": "Fixing a defect",
+            "title": "Bug Fix"
         },
         "docs": {
-            "description": "Documentation only changes",
+            "description": "Improving documentation",
             "title": "Documentation"
+        },
+        "style": {
+            "description": "Fixing code style",
+            "title": "Style"
+        },
+        "refactor": {
+            "description": "Refactor the code without behavior changes",
+            "title": "Refactor"
+        },
+        "test": {
+            "description": "Adding missing tests",
+            "title": "Tests"
+        },
+        "perf": {
+            "description": "A performance related change",
+            "title": "Performance"
+        },
+        "build": {
+            "description": "A change to build scripts",
+            "title": "Build"
+        },
+        "conf": {
+            "description": "A change to configuration",
+            "title": "Configuration"
         },
         "chore": {
             "description": "Build system, non src code changes",
             "title": "Chore"
+        },
+        "partial": {
+            "description": "Partial work working toward or under a larger fix/feature (will not trigger a release)",
+            "title": "Partial Work"
         },
         "revert": {
             "description": "Reverts a previous commit",

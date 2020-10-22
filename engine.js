@@ -59,12 +59,6 @@ module.exports = function (options) {
                 },
                 {
                     type: 'input',
-                    name: 'body',
-                    message: 'BODY - write a longer description of the change (enter to skip)\n',
-                    default: options.defaultBody,
-                },
-                {
-                    type: 'input',
                     name: 'ticket',
                     message: `JIRA ID - enter the JIRA ticket ID (enter to use ${branchName}):\n`,
                     default: branchName,
@@ -77,12 +71,9 @@ module.exports = function (options) {
                 },
                 {
                     type: 'input',
-                    name: 'breaking',
-                    message: `Describe the breaking changes (enter to use ${answers.body}):\n`,
-                    default: answers.body,
-                    when: function (answers) {
-                        return answers.isBreaking;
-                    },
+                    name: 'body',
+                    message: 'BODY - write a longer description of the change (enter to skip)\n',
+                    default: options.defaultBody,
                 },
             ]).then(function (answers) {
                 const maxLineWidth = 72;
@@ -112,7 +103,7 @@ module.exports = function (options) {
 
                 // Wrap these lines at 72 characters
                 const body = wrap(
-                    answers.isBreaking ? `BREAKING CHANGE: ${answers.breaking}` : answers.body,
+                    answers.isBreaking ? `BREAKING CHANGE: ${answers.body}` : answers.body,
                     wrapOptions
                 );
 

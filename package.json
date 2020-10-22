@@ -49,5 +49,10 @@
             ],
             "@semantic-release/github"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./index.js"
+        }
     }
 }

@@ -48,7 +48,7 @@ module.exports = function (options) {
                 {
                     type: 'input',
                     name: 'scope',
-                    message: 'SCOPE - enter one word that defines the work (enter to skip):',
+                    message: 'SCOPE - enter one word that defines the work:',
                     default: options.defaultScope,
                 },
                 {

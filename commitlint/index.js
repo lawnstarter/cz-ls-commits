@@ -1,7 +1,6 @@
 module.exports = {
     rules: {
         'header-max-length': [2, 'always', 72],
-        'subject-empty': [2, 'never'],
         'type-case': [2, 'always', ['lower-case']],
         'type-empty': [2, 'never'],
         'type-enum': [
@@ -21,5 +20,7 @@ module.exports = {
                 'revert',
             ],
         ],
+        'scope-empty': [2, 'never'],
+        'subject-empty': [2, 'never'],
     },
 };

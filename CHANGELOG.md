@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.3...1.0.4) (2020-10-23)
+
+
+### Bug Fixes
+
+* **scope:** fix scope noting as if it isn't required ([c57cca0](https://github.com/lawnstarter/cz-ls-commits/commit/c57cca0b30ba6eb60b6aafa3a052615f34e5aaa6))
+
 ## [1.0.3](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.2...1.0.3) (2020-10-22)
 
 

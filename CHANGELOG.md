@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.4...1.1.0) (2020-11-19)
+
+
+### Features
+
+* **commitizen:** remove style and chore PE-1565 ([8c822d9](https://github.com/lawnstarter/cz-ls-commits/commit/8c822d9c1b1fa4abd38bd767a8e22ff1efd99037))
+
 ## [1.0.4](https://github.com/lawnstarter/cz-ls-commits/compare/1.0.3...1.0.4) (2020-10-23)
 
 

@@ -1,44 +1,36 @@
 {
     "types": {
         "feat": {
-            "description": "A new feature",
+            "description": "Adding a new feature.",
             "title": "Feature"
         },
         "fix": {
-            "description": "Fixing a defect",
+            "description": "Fixing a bug. This should not be used for Story Bugs.",
             "title": "Bug Fix"
         },
         "docs": {
-            "description": "Improving documentation",
+            "description": "Improving documentation.",
             "title": "Documentation"
         },
-        "style": {
-            "description": "Fixing code style",
-            "title": "Style"
-        },
         "refactor": {
-            "description": "Refactor the code without behavior changes",
+            "description": "This is a code improvement. It is a refactor of the  code without acceptance criteria changes.",
             "title": "Refactor"
         },
         "test": {
-            "description": "Adding missing tests",
+            "description": "Adding tests that were not originally added as part of the Story. It could be unit, integration, UI as described in out Test Pyramid.",
             "title": "Tests"
         },
         "perf": {
-            "description": "A performance related change",
+            "description": "This is a code change that will improve performance/scalability of the current functionality.",
             "title": "Performance"
         },
         "build": {
-            "description": "A change to build scripts",
+            "description": "A change to build scripts.",
             "title": "Build"
         },
         "conf": {
-            "description": "A change to configuration",
+            "description": "A change to configuration. E.g: Infrastructure as code, environment variables, etc.",
             "title": "Configuration"
-        },
-        "chore": {
-            "description": "Build system, non src code changes",
-            "title": "Chore"
         },
         "revert": {
             "description": "Reverts a previous commit",
